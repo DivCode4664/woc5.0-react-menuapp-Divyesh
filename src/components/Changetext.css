@@ -1,0 +1,66 @@
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+
+
+    
+    .greetings {
+    color: #fff;
+    font-size: 80px;
+    text-align: center;
+    font-family: monospace;
+    overflow: hidden; 
+    border-right: .15em solid #ccc; 
+    white-space: nowrap; 
+    margin: 0 auto;
+    letter-spacing: .15em; 
+    animation: 
+      typing 1.5s steps(30, end),
+      blink-caret .5s step-end infinite;
+  }
+  
+
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #ccc }
+  }
+
+  :root {
+    --typewriterSpeed: 1.5s;
+    --typewriterCharacters: 24;
+  }
+  
+ 
+  .welcome {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 3.6rem;
+    font-weight: 400;
+    opacity: 0;
+    text-align: center;
+    transform: translateY(3rem);
+    animation: fadeInUp 1.5s ease 2.5s forwards;
+  }
+  
+  
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @media only screen and (min-width: 320px)  {
+
+     h1 {
+      font-size: 60px;
+     }
+     p {
+      font-size: 3rem;
+     }
+  }
+  
+  
